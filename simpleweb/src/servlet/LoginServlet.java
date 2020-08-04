@@ -28,7 +28,7 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
- 
+    	System.out.println("do Get mac dinh");
         // Forward tới trang /WEB-INF/views/loginView.jsp
         // (Người dùng không thể truy cập trực tiếp
         // vào các trang JSP đặt trong thư mục WEB-INF).
@@ -44,6 +44,7 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+    	System.out.println("do post khi nguoi dung nhap form");
         String userName = request.getParameter("userName");
         String password = request.getParameter("password");
         String rememberMeStr = request.getParameter("rememberMe");

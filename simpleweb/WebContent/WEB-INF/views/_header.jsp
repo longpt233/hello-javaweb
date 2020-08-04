@@ -3,20 +3,18 @@
   
   
   
-<div style="background: #E0E0E0; height: 55px; padding: 5px;">
-  <div style="float: left">
-     <h4>My Site  (quy định trong phần header ở phần view)</h4>
+<div style="background: #E0E0E0; height: 100px; padding: 5px;">
+  <div style="float: left;margin:auto;">
+     <h4 style="border:1px solid red">My Site </h4>
   </div>
  
   <div style="float: right; padding: 10px; text-align: right;">
  
      <!-- User store in session with attribute: loginedUser -->
-     Hello <b>${loginedUser.userName}   </b>
-     <h6>(đây là tên người dung lấy trong userName nếu đã đăng nhập)</h6>
+     Hello <b>   ${loginedUser.userName}   </b>
    
-   
-   <br/>
-     Search  ở đây <input name="search">
+  <br/>
+     Search <input name="search">
  
   </div>
  

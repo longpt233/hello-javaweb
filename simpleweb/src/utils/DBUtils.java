@@ -63,7 +63,7 @@ public class DBUtils {
     }
  
     public static List<Product> queryProduct(Connection conn) throws SQLException {
-        String sql = "Select a.CODE, a.NAME, a.PRICE from PRODUCE a ";
+        String sql = "Select a.CODE, a.NAME, a.PRICE from PRODUCT a ";
  
         PreparedStatement pstm = conn.prepareStatement(sql);
  
@@ -83,7 +83,7 @@ public class DBUtils {
     }
  
     public static Product findProduct(Connection conn, String code) throws SQLException {
-        String sql = "Select a.CODE,a.NAME, a.PRICE from PRODUCE a where a.CODE=?";
+        String sql = "Select a.CODE,a.NAME, a.PRICE from PRODUCT a where a.CODE=?";
  
         PreparedStatement pstm = conn.prepareStatement(sql);
         pstm.setString(1, code);
@@ -100,7 +100,7 @@ public class DBUtils {
     }
  
     public static void updateProduct(Connection conn, Product product) throws SQLException {
-        String sql = "Update PRODUCE set NAME =?, PRICE=? where CODE=? ";
+        String sql = "Update PRODUCT set NAME =?, PRICE=? where CODE=? ";
  
         PreparedStatement pstm = conn.prepareStatement(sql);
  
@@ -111,7 +111,7 @@ public class DBUtils {
     }
  
     public static void insertProduct(Connection conn, Product product) throws SQLException {
-        String sql = "Insert into PRODUCE(CODE, NAME,PRICE) values (?,?,?)";
+        String sql = "Insert into PRODUCT(CODE, NAME,PRICE) values (?,?,?)";
  
         PreparedStatement pstm = conn.prepareStatement(sql);
  
@@ -123,7 +123,7 @@ public class DBUtils {
     }
  
     public static void deleteProduct(Connection conn, String code) throws SQLException {
-        String sql = "Delete From PRODUCE where CODE= ?";
+        String sql = "Delete From PRODUCT where CODE= ?";
  
         PreparedStatement pstm = conn.prepareStatement(sql);
  

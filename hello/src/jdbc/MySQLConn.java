@@ -27,7 +27,7 @@ public class MySQLConn {
      // Nếu bạn dùng Java6, thì ko cần dòng này cũng được.
      //Class.forName("com.mysql.jdbc.Driver");
  
-     // Cấu trúc URL Connection dành cho Oracle
+     // Cấu trúc URL Connection
      // Ví dụ: jdbc:mysql://localhost:3306/simplehr
      String connectionURL = "jdbc:mysql://" + hostName + ":3306/" + dbName;
  

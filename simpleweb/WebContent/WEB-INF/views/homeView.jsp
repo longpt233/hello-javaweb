@@ -10,11 +10,9 @@
  
      <jsp:include page="_header.jsp"></jsp:include>
      <jsp:include page="_menu.jsp"></jsp:include>
-    <b> cả đống này dc viết cho trang home </b>
-    <h4> trang này bao gồm header và footer và menu </h4>
       <h3>Home Page</h3>
       
-      This is demo Simple web application using jsp,servlet &amp; Jdbc. <br><br>
+      This is demo Simple web application using jsp,servlet, Jdbc. <br><br>
       <b>It includes the following functions:</b>
       
       <ul>
@@ -25,7 +23,7 @@
          <li>Edit Product</li>
          <li>Delete Product</li>
          
-         <b> hết homeView.jsp</b>
+         
       </ul>
  
      <jsp:include page="_footer.jsp"></jsp:include>

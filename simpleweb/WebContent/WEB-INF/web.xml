@@ -19,6 +19,7 @@
   
   
   <welcome-file-list>
+  <!-- tu dong them duoi home vao sau duwong dan -->
     <welcome-file>home</welcome-file> 
     <welcome-file>index.html</welcome-file> 
   </welcome-file-list>

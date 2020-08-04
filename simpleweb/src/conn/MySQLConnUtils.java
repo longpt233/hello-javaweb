@@ -21,7 +21,7 @@ public static Connection getMySQLConnection(String hostName, String dbName,
         String userName, String password) throws SQLException,
         ClassNotFoundException {
    
-    Class.forName("com.mysql.jdbc.Driver");  // java6 do xuogn 
+    Class.forName("com.mysql.jdbc.Driver");  // java6 do xuogn ?
  
     // Cấu trúc URL Connection đối với MySQL:
     // Ví dụ: 
